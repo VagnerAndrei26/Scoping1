@@ -1,0 +1,7 @@
+{
+    "StrategStepAaveV2DepositContract": "0xDa865b950B9E308892F4B9009056622fdf28717a",
+    "StrategStepAaveV3DepositContract": "0x057D3Af41eC9F3979D17D636FbbE3B8a071E9B08",
+    "StrategStepUniswapV2RouterContract": "0x0e844E09BE0A21E29FBbF796BE14644A9782dAE1",
+    "StrategStepRegistryContract": "0xB6ab1DA0a5889087ed7E18f73E1973784963ce06",
+    "StrategVaultFactoryContract": "0x03d2FC41b8da8798cF4902F02b509132F0Bb2ee4"
+}

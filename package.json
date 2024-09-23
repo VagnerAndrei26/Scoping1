@@ -1,0 +1,28 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@debridge-finance/debridge-protocol-evm-interfaces": "^1.0.4",
+    "@debridge-finance/hardhat-debridge": "^1.0.1",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-vyper": "^3.0.0",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@tenderly/hardhat-tenderly": "^1.1.6",
+    "hardhat": "^2.10.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "mocha-junit-reporter": "^2.2.0"
+  },
+  "dependencies": {
+    "@anders-t/ethers-ledger": "^1.0.4",
+    "@connext/nxtp-contracts": "^0.2.1-beta.1",
+    "@connext/nxtp-sdk": "^0.2.0-beta.22",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+  },
+  "resolutions": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13"
+  },
+  "scripts": {
+    "node": "echo \"{}\" > scripts/contracts/localhost.json; hardhat node"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "StrategStepAaveV2DepositContract": "0xBBC32c054322781d57B459086D373e519ae34D9d",
+    "StrategStepAaveV3DepositContract": "0xa470505429C488F6B548269eCA05DE5Fa13b8569",
+    "StrategStepUniswapV2RouterContract": "0x4f44A943253Ea8b9C0595E920Fb5F6bc5A84e865",
+    "StrategStepRegistryContract": "0x41723d86480Da791853259be0B93FA53896CA95e",
+    "StrategVaultFactoryContract": "0xF2aCb9cc6Ac13b5DeE5E65aA94776a4b8104BA2b",
+    "StrategPortalContract": "0xE581cF475C66835FD2Bb9dDA4D9aE1D4Bee09968",
+    "StrategSwapRouterUniswapV2Contract": "0xD1b6277F61b1E790dD4466C88Bc8D610DB28c704",
+    "StrategDebridgeXGatewayContract": "0x293305522f520a916ee94A71fA795F519d55355A"
+}

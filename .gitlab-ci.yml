@@ -1,0 +1,54 @@
+image: node:16
+
+cache: &global_cache
+  key: $CI_COMMIT_REF_SLUG
+  paths:
+    - node_modules/
+    - artifacts/
+    - cache/
+    - typechain-types/
+  policy: pull-push
+
+before_script:
+  - npm install
+  - npx hardhat compile
+
+install:
+  stage: build
+  script: 
+    - npm install
+    - npx hardhat compile
+    - npx hardhat typechain
+
+unit-test:
+  stage: test
+  variables:
+    MOCHA_REPORTER: mocha-junit-reporter
+  script:
+    - npx hardhat test
+  artifacts:
+    when: always
+    paths:
+      - testresult.xml
+    reports:
+      junit: testresult.xml
+
+gas-report:
+  stage: test
+  variables:
+    REPORT_GAS: "true"
+  script:
+    - npx hardhat test
+
+coverage:
+  stage: test
+  script:
+    - npx hardhat coverage
+  artifacts:
+    when: always
+    paths:
+      - coverage/cobertura-coverage.xml
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/cobertura-coverage.xml
